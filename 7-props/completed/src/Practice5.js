@@ -3,8 +3,8 @@ import React from "react";
 const Practice5 = () => {
   const user = {
     id: 1,
-    username: "zgordon",
-    firstName: "Zac",
+    username: "zgordon1",
+    firstName: "Zac1",
     lastName: "Gordon",
     preferredName: "Zac",
     url: "https://zacgordon.com",
@@ -26,7 +26,7 @@ const Practice5 = () => {
   4. Pass the username to <Username />
   5. Pass the url and twitter to <Social />
 */
-const User = ({ firstName, lastName, username, url, twitter }) => {
+const User = ( firstName, lastName, username, url, twitter ) => {
   return (
     <div className="user">
       <FullName firstName={firstName} lastName={lastName} />
@@ -39,7 +39,7 @@ const User = ({ firstName, lastName, username, url, twitter }) => {
 /*
   6. Destructure the props needed
 */
-const FullName = ({ firstName, lastName }) => (
+const FullName = ( firstName, lastName ) => (
   <h1>
     {firstName} {lastName}
   </h1>
@@ -61,7 +61,7 @@ const Social = ({ url, twitter }) => {
         <a href={url}>Website</a>
       </li>
       <li>
-        <a href={`https://twitter.com/${twitter}`}>Twitter</a>
+        <a href={`https://twitter.com/${twitter}`}>Twitter1</a>
       </li>
     </ul>
   );

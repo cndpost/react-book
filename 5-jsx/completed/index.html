@@ -1,16 +1,19 @@
+<!--import React from './react'; -->
 <!DOCTYPE html>
-<html>
-  <head>
+<Html>
+  <hEad>
     <meta charset="UTF-8" />
     <title>Chapter 5 Practice Exercises</title>
+    <link rel="stylesheet" href="stylesheet.css" />
+    <script src="myscript.js"></script>
     <script src="react.js"></script>
     <script src="react-dom.js"></script>
     <script src="babel.js"></script>
-  </head>
+    </head>
 
   <body>
-    <div id="root"></div>
-    <script type="text/babel">
+    <Div Id="root"></div>
+    <Script Type="text/babel">
       // Practice #1
       // Create a variable called pEl
       // Use JSX to create a paragraph element with text "Hello React."
@@ -34,6 +37,7 @@
         return (
           <header id="main">
             {h1LinkEl}
+            {h1LinkEl}
             {pEl}
           </header>
         );
@@ -49,7 +53,7 @@
       // Make sure to include a key for each list item
       function List() {
         return (
-          <ul id="top" className="react-links">
+          <ol id="top" className="react-links">
             <li key="linkReact">
               <a href="https://reactjs.org/docs">React Docs</a>
             </li>
@@ -61,7 +65,7 @@
             <li key="linkReactBook">
               <a href="https://reactexplained.com">React Explained Book</a>
             </li>
-          </ul>
+          </ol>
         );
       }
 
@@ -69,19 +73,25 @@
       // Create a component named "App"
       // Have it return a Fragment with the Header and List components inside of it
       // NOTE: The <> shorthand will not work with this demo, use <React.Fragment> for now
-      function App() {
+      function Fapp() {
         return (
           <React.Fragment>
             <Header />
+            <Header/>
             <List />
           </React.Fragment>
         );
       }
 
+      function dude(var1){
+        return document.getElementById(var1)
+      }
+
       ReactDOM.render(
         // Place your element variable or component function call here to test
-        <App />,
-        document.getElementById("root")
+        <Fapp />,
+       // document.getElementById("root")
+        dude("root")
       );
     </script>
   </body>
